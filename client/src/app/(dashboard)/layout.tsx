@@ -46,7 +46,9 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
           <main className="flex">
             <Sidebar userType={authUser.userRole.toLowerCase()} />
             <div className="flex-grow transition-all duration-300">
-              <MainContentWrapper>{children}</MainContentWrapper>
+              <MainContentWrapper role={authUser.userRole?.toLowerCase()}>
+                {children}
+              </MainContentWrapper>
             </div>
           </main>
         </div>
