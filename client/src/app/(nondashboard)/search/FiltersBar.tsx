@@ -96,7 +96,7 @@ const FiltersBar = () => {
   };
 
   return (
-    <div className="flex justify-between items-center w-full py-5">
+    <div className="flex justify-between items-center w-full py-5 overflow-x-auto">
       {/* Filters */}
       <div className="flex justify-between items-center gap-4 p-2">
         {/* All Filters */}

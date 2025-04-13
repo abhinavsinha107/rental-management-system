@@ -35,7 +35,6 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
   }, [authUser, router, pathname]);
 
   if (authLoading || isLoading) return <>Loading...</>;
-
   if (!authUser?.userRole) return null;
 
   return (

@@ -28,7 +28,6 @@ const SearchPage = () => {
         } else {
           acc[key] = value === "any" ? null : value;
         }
-
         return acc;
       },
       {}
